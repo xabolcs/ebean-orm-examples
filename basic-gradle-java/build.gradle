@@ -20,6 +20,8 @@ dependencies {
   implementation 'org.postgresql:postgresql:42.3.3'
   implementation 'io.ebean:ebean:13.6.0'
 
+  implementation 'com.google.code.maven-play-plugin.org.playframework:play:1.5.0'
+
   // apt query bean generation
   annotationProcessor 'io.ebean:querybean-generator:13.6.0'
 
