@@ -210,8 +210,7 @@ public class LoadExampleData {
     Product product2 = Ebean.getReference(Product.class, 2);
     Product product3 = Ebean.getReference(Product.class, 3);
 
-    Order order = new Order();
-    order.setCustomer(customer);
+    Order order = new Order(customer);
 
     List<OrderDetail> details = new ArrayList<OrderDetail>();
     details.add(new OrderDetail(product1, 5, 10.50));
@@ -229,9 +228,8 @@ public class LoadExampleData {
 
     Product product1 = Ebean.getReference(Product.class, 1);
 
-    Order order = new Order();
+    Order order = new Order(customer);
     order.setStatus(Status.SHIPPED);
-    order.setCustomer(customer);
 
     List<OrderDetail> details = new ArrayList<OrderDetail>();
     details.add(new OrderDetail(product1, 4, 10.50));
@@ -247,9 +245,8 @@ public class LoadExampleData {
     Product product1 = Ebean.getReference(Product.class, 1);
     Product product3 = Ebean.getReference(Product.class, 3);
 
-    Order order = new Order();
+    Order order = new Order(customer);
     order.setStatus(Status.COMPLETE);
-    order.setCustomer(customer);
 
     List<OrderDetail> details = new ArrayList<OrderDetail>();
     details.add(new OrderDetail(product1, 3, 10.50));
@@ -263,8 +260,7 @@ public class LoadExampleData {
 
   private void createOrder4(Customer customer) {
 
-    Order order = new Order();
-    order.setCustomer(customer);
+    Order order = new Order(customer);
 
     //order.addShipment(new OrderShipment());
 
