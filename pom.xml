@@ -11,6 +11,7 @@
   <properties>
     <java.version>1.8</java.version>
     <ebeanorm-enhancement.plugin.args>debug=1</ebeanorm-enhancement.plugin.args>
+    <avaje-ebeanorm-mavenenhancer.version>4.5.4</avaje-ebeanorm-mavenenhancer.version>
   </properties>
 
   <dependencies>
@@ -75,6 +76,12 @@
       <groupId>org.avaje.composite</groupId>
       <artifactId>composite-testing</artifactId>
       <version>3.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
       <scope>test</scope>
     </dependency>
 
