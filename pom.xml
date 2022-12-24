@@ -11,6 +11,7 @@
   <properties>
     <java.version>1.8</java.version>
     <ebeanorm-enhancement.plugin.args>debug=1</ebeanorm-enhancement.plugin.args>
+    <avaje-ebeanorm-mavenenhancer.version>4.5.4</avaje-ebeanorm-mavenenhancer.version>
   </properties>
 
   <dependencies>
@@ -31,7 +32,7 @@
     <dependency>
       <groupId>org.avaje.ebeanorm</groupId>
       <artifactId>avaje-ebeanorm</artifactId>
-      <version>7.16.2</version>
+      <version>7.21.2</version>
     </dependency>
 
     <!-- support for query beans -->
@@ -76,6 +77,12 @@
       <artifactId>composite-testing</artifactId>
       <version>2.1</version>
       <type>pom</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
       <scope>test</scope>
     </dependency>
 
